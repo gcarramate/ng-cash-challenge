@@ -1,16 +1,13 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   RouteComponentProps as ReactRouterComponentProps,
   RouteProps as ReactRouteProps,
   StaticContext,
-} from "react-router";
-import { Route as ReactRoute, Router, Redirect } from "react-router-dom";
+} from 'react-router';
+import { Route as ReactRoute, Router, Redirect } from 'react-router-dom';
 
-export interface RouteComponentProps<
-  P extends { [K in keyof P]?: string | undefined },
-  C extends StaticContext,
-  S
-> extends ReactRouterComponentProps<P, C, S> {
+export interface RouteComponentProps<P extends { [K in keyof P]?: string | undefined }, C extends StaticContext, S>
+  extends ReactRouterComponentProps<P, C, S> {
   router: Router;
 }
 

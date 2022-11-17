@@ -1,3 +1,3 @@
-export * from "./route.component";
+export * from './route.component';
 
-export { Switch } from "react-router-dom";
+export { Switch } from 'react-router-dom';
