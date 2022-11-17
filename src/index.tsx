@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// eslint-disable-next-line import/no-unassigned-import
+import "./assets/fonts/fonts.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
