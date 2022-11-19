@@ -14,12 +14,12 @@ export interface RouteComponentProps<P extends { [K in keyof P]?: string | undef
 export type RouteGuard = () => boolean;
 
 export interface RouteProps extends ReactRouteProps {
-  useGuard: RouteGuard;
+  useGuard?: RouteGuard;
   redirectPath: string;
 }
 
 export const Route: React.FC<RouteProps> = (props) => {
-  const authorized = props.useGuard();
+  const authorized = true; //TODO: change to check if user is authenticated
   const WrappedComponent: any = props.component;
 
   const handleRender = (innerProps: any) => {
