@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { H1 } from '../../../atomic/atm.typography';
+import { H1 } from 'atomic/atm.typography';
 
 export const CreateAccountPage: React.FC = () => {
   return (

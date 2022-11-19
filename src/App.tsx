@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes } from './app/routes';
+import { Routes } from 'app/routes';
 
 function App() {
   return <Routes />;

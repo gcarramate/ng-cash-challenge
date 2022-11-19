@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
-import { Route } from './core/route';
-import { CreateAccountPage } from './modules/create-account/create-account.page';
-import { DashboardPage } from './modules/dashboard/dashboard.page';
-import { LoginPage } from './modules/login/login.page';
-import { AppPath } from './route-constants';
+import { Route } from 'app/core/route';
+import { CreateAccountPage } from 'app/modules/create-account/create-account.page';
+import { DashboardPage } from 'app/modules/dashboard/dashboard.page';
+import { LoginPage } from 'app/modules/login/login.page';
+import { AppPath } from 'app/route-constants';
 
 const history = createBrowserHistory();
 
