@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import { Color, FontFamily, FontSize, Border, Spacing } from 'atomic/obj.constants';
+import { Color, Border, Spacing } from 'atomic/obj.constants';
 
 export const LoginButtonStyled = styled.button`
   color: ${Color.White};
-  background-color: ${Color.Black};
-  font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.Medium};
+  background-color: ${Color.TrueBlack};
   border-radius: ${Border.RadiusSmall};
-  margin-top: ${Spacing.Medium};
-  padding: ${Spacing.XSmall};
+  margin-top: ${Spacing.Large};
+  padding: 0 ${Spacing.XSmall};
+  width: 100%;
   cursor: pointer;
 `;
 
@@ -18,5 +17,5 @@ export const FieldWrapperStyled = styled.div`
 `;
 
 export const FormWrapperStyled = styled.div`
-  display: inline-table;
+  display: block;
 `;

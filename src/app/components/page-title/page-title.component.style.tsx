@@ -4,7 +4,6 @@ import { Color } from 'atomic/obj.constants';
 
 export const PageTitleH1 = styled(H1)`
   color: ${Color.White};
-  padding-top: 100px;
 `;
 
 export const PageTitleDiv = styled.div`

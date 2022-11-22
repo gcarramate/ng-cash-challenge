@@ -4,26 +4,35 @@ import {
   LoginButtonStyled,
   FieldWrapperStyled,
   FormWrapperStyled,
-} from 'app/components/login-form/login-form.component.style';
-import { LoginStrings } from 'app/modules/login/login.strings';
+} from 'app/components/logged-out-form/logged-out-form.component.style';
+import { LoggedOutStrings } from 'app/components/logged-out-page/logged-out.strings';
 import { Body, InputLabel } from 'atomic/atm.typography';
 import { Hbox } from 'atomic/obj.box';
 
-interface LoginFormInput {
+interface LoggedOutFormInput {
   email?: string;
   password?: string;
 }
 
-const strings = LoginStrings.form;
+export enum PageVariants {
+  login,
+  createAccount,
+}
 
-export const LoginForm: React.FC = () => {
-  const [inputs, setInputs] = useState<LoginFormInput>({});
+interface LoggedOutFormProps {
+  variant: PageVariants;
+}
+
+export const LoggedOutForm: React.FC<LoggedOutFormProps> = (props) => {
+  const [inputs, setInputs] = useState<LoggedOutFormInput>({});
 
   const handleChange = (event: any) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
   };
+
+  const strings = LoggedOutStrings.form;
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -55,7 +64,9 @@ export const LoginForm: React.FC = () => {
         </Hbox>
       </FieldWrapperStyled>
       <LoginButtonStyled onClick={handleSubmit}>
-        <Body variant="white">{strings.submitButton}</Body>
+        <Body variant="white">
+          {props.variant === PageVariants.login ? strings.loginButton : strings.registerButton}
+        </Body>
       </LoginButtonStyled>
     </FormWrapperStyled>
   );
