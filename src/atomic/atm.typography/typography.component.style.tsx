@@ -17,6 +17,7 @@ export interface BodyProps {
 
 interface InputLabelProps {
   hasError?: boolean;
+  noMargin?: boolean;
 }
 
 export const H1 = styled.h1`
@@ -54,8 +55,15 @@ export const Body = styled.p<BodyProps>`
   margin: 0;
   font-size: ${FontSize.Normal};
   font-family: ${FontFamily.Primary};
-  font-weight: ${FontWeight.Medium};
+  font-weight: ${FontWeight.Normal};
   line-height: ${LineHeight.Normal};
+`;
+
+export const Label = styled(Body)`
+  font-size: ${FontSize.Small};
+  font-family: ${FontFamily.Primary};
+  font-weight: ${FontWeight.Normal};
+  line-height: ${LineHeight.Small};
 `;
 
 export const InputLabel = styled.label<InputLabelProps>`
@@ -63,7 +71,7 @@ export const InputLabel = styled.label<InputLabelProps>`
   display: block;
   font-size: ${FontSize.Small};
   font-family: ${FontFamily.Primary};
-  font-weight: ${FontWeight.Bold};
+  font-weight: ${FontWeight.Normal};
   line-height: ${LineHeight.Small};
-  margin-bottom: ${Spacing.XSmall};
+  margin-bottom: ${(props) => (props.noMargin ? 0 : Spacing.XSmall)};
 `;
