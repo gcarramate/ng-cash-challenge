@@ -27,7 +27,7 @@ export const H1 = styled.h1`
   font-weight: ${FontWeight.Bold};
   line-height: ${LineHeight.XLarge};
   margin-bottom: ${Spacing.XLarge};
-  margin-top: ${Spacing.XLarge};
+  margin-top: 0;
 `;
 
 export const H2 = styled.h2`

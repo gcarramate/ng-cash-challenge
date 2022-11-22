@@ -1,10 +1,7 @@
 import * as React from 'react';
-import { H1 } from 'atomic/atm.typography';
+import { PageVariants } from 'app/components/logged-out-form';
+import { LoggedOutPage } from 'app/components/logged-out-page/logged-out-page.component';
 
 export const CreateAccountPage: React.FC = () => {
-  return (
-    <div>
-      <H1>Teste criar conta</H1>
-    </div>
-  );
+  return <LoggedOutPage variant={PageVariants.createAccount} />;
 };

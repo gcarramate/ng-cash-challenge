@@ -10,7 +10,7 @@ interface BoxProps {
 }
 
 interface SeparatorProps {
-  size?: 'small' | 'normal' | 'large';
+  size?: 'xSmall' | 'small' | 'normal' | 'large';
 }
 
 export interface HboxProps extends BoxProps {

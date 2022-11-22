@@ -69,3 +69,5 @@ export const Border = {
   RadiusMedium: '8px',
   RadiusLarge: '16px',
 };
+
+export const LOGO_SIZE = '300px';
