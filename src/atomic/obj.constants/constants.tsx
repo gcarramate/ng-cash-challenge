@@ -1,4 +1,5 @@
 export class Color {
+  public static readonly TrueBlack = '#000000';
   public static readonly Black = '#333333';
   public static readonly White = '#FFFFFF';
 
@@ -59,4 +60,12 @@ export enum ZIndex {
 
 export const Shadow = {
   Small: '0px 2px 2px 0px rgba(0,0,0,0.2)',
+};
+
+export const Border = {
+  Width: '1px',
+  RadiusXSmall: '2px',
+  RadiusSmall: '4px',
+  RadiusMedium: '8px',
+  RadiusLarge: '16px',
 };
