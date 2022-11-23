@@ -4,7 +4,7 @@ import {
   LoginButtonStyled,
   FieldWrapperStyled,
   FormWrapperStyled,
-} from 'app/components/logged-out-form/logged-out-form.component.style';
+} from 'app/components/logged-out-page/logged-out-form/logged-out-form.component.style';
 import { LoggedOutStrings } from 'app/components/logged-out-page/logged-out.strings';
 import { Body, InputLabel } from 'atomic/atm.typography';
 import { Hbox } from 'atomic/obj.box';

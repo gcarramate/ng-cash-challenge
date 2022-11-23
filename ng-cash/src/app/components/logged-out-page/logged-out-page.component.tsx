@@ -1,7 +1,11 @@
 import * as React from 'react';
 import { useHistory } from 'react-router';
-import { LoggedOutCardStyled, LinkButtonWrapperStyled, LinkButtonStyled } from 'app/components/logged-out-card';
-import { LoggedOutForm, PageVariants } from 'app/components/logged-out-form';
+import {
+  LoggedOutCardStyled,
+  LinkButtonWrapperStyled,
+  LinkButtonStyled,
+} from 'app/components/logged-out-page/logged-out-card';
+import { LoggedOutForm, PageVariants } from 'app/components/logged-out-page/logged-out-form';
 import { LoggedOutStrings } from 'app/components/logged-out-page/logged-out.strings';
 import { PageTitle } from 'app/components/page-title/page-title.component';
 import { PageWrapper } from 'app/components/page-wrapper/page-wrapper.component.style';
