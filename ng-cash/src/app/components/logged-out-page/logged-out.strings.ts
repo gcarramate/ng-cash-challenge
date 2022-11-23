@@ -11,7 +11,7 @@ export const LoggedOutStrings = {
   },
   form: {
     username: 'username',
-    password: 'senha',
+    password: 'password',
     loginButton: 'Entrar',
     registerButton: 'Criar conta',
   },
