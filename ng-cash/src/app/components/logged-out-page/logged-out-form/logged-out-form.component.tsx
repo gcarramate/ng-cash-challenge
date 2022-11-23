@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useState } from 'react';
 import {
+  LoggedOutStrings,
   LoginButtonStyled,
   FieldWrapperStyled,
   FormWrapperStyled,
-} from 'app/components/logged-out-page/logged-out-form/logged-out-form.component.style';
-import { LoggedOutStrings } from 'app/components/logged-out-page/logged-out.strings';
+} from 'app/components/logged-out-page';
 import { Body, InputLabel } from 'atomic/atm.typography';
 import { Hbox } from 'atomic/obj.box';
 

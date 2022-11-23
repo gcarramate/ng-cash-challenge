@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PageTitleH1, PageTitleDiv } from 'app/components/page-title/page-title.component.style';
+import { PageTitleH1, PageTitleDiv } from 'app/components/page-title';
 
 export interface PageTitleProps {
   text: string;

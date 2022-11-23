@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { useHistory } from 'react-router';
 import {
+  LoggedOutStrings,
   LoggedOutCardStyled,
   LinkButtonWrapperStyled,
   LinkButtonStyled,
-} from 'app/components/logged-out-page/logged-out-card';
-import { LoggedOutForm, PageVariants } from 'app/components/logged-out-page/logged-out-form';
-import { LoggedOutStrings } from 'app/components/logged-out-page/logged-out.strings';
-import { PageTitle } from 'app/components/page-title/page-title.component';
-import { PageWrapper } from 'app/components/page-wrapper/page-wrapper.component.style';
+  LoggedOutForm,
+  PageVariants,
+} from 'app/components/logged-out-page';
+import { PageTitle } from 'app/components/page-title';
+import { PageWrapper } from 'app/components/page-wrapper';
 import { AppPath } from 'app/route-constants';
 import { Label } from 'atomic/atm.typography';
 import { Hbox } from 'atomic/obj.box';
